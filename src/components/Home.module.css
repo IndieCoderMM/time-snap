@@ -6,6 +6,21 @@
   padding: 2rem;
 }
 
+.header {
+  padding: 1rem;
+}
+
+.logo {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--pale-blue);
+  line-height: 2;
+}
+
 @media (min-width: 768px) {
   .container {
     flex-direction: row;

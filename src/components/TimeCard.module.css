@@ -69,6 +69,9 @@
 }
 
 @media (min-width: 768px) {
+  .container {
+    min-height: 250px;
+  }
   .dataBox {
     gap: 1rem;
   }
@@ -76,5 +79,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+  .hour {
+    font-size: 3rem;
   }
 }
