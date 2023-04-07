@@ -8,7 +8,7 @@ import PlayIcon from '../assets/icon-play.svg';
 import SelfCareIcon from '../assets/icon-self-care.svg';
 import styles from './TimeGrid.module.css';
 
-function TimeGrid({ data }) {
+function TimeGrid({ data, view }) {
   const icons = {
     work: WorkIcon,
     play: PlayIcon,
@@ -31,7 +31,15 @@ function TimeGrid({ data }) {
         <TimeCard
           key={item.title}
           title={item.title}
+          data={item.timeframes[view]}
           icon={icons[item.title.toLowerCase()]}
+          pastText={
+            view === 'daily'
+              ? 'Yesterday'
+              : view === 'weekly'
+              ? 'Last Week'
+              : 'Last Month'
+          }
           bgColor={colors[item.title.toLowerCase()]}
         />
       ))}

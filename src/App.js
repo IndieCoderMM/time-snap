@@ -105,7 +105,7 @@ function App() {
       },
     },
   ];
-  console.log(data[0]);
+
   return <Home data={data} />;
 }
 
