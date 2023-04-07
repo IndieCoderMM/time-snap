@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--dark-blue);
+}
+
+.profileBar {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.picture {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  color: var(--gray-blue);
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn:hover {
+  color: white;
+}
