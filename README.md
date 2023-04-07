@@ -28,9 +28,11 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
+**TimeSnap** is a modern and user-friendly time-tracking app created using the React. With its intuitive interface and powerful features, TimeSnap helps you become more productive and efficient by giving you insights into how you're spending your time.
+
 ## 📸 Screenshot <a name="screenshot"></a>
 
-<img src="https://via.placeholder.com/468x300?text=App+Screenshot+Here" width=468 height=300 alt="screenshot" />
+<img src="./app-screenshot.png" width=468 height=300 alt="screenshot" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
