@@ -3,12 +3,14 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow: hidden;
   background-color: var(--dark-blue);
 }
 
 .profileBar {
   background-color: var(--blue);
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -24,15 +26,20 @@
   border-radius: 50%;
 }
 
+.info {
+  color: var(--pale-blue);
+  font-weight: 300;
+}
+
 .name {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 .navBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
   padding: 1.5rem;
 }
 
@@ -44,9 +51,30 @@
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-  flex: 1;
+  transition: all 0.3s;
 }
 
 .btn:hover {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 250px;
+    align-self: stretch;
+  }
+
+  .profileBar {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  .navBar {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    justify-items: left;
+    gap: 1rem;
+  }
 }

@@ -18,7 +18,7 @@ function TimeCard({ title, data, pastText, icon, bgColor }) {
         <img src={icon} className={styles.icon} alt="" />
       </div>
       <div className={styles.dataBox}>
-        <div className={styles.bar}>
+        <div className={styles.header}>
           <p className={styles.title}>{title}</p>
           <button type="button" className={styles.menuBtn}>
             <img src={MenuIcon} alt="Menu Icon" />

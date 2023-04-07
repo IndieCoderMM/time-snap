@@ -10,7 +10,10 @@ function Profile({ activeView, changeView }) {
     <div className={styles.container}>
       <div className={styles.profileBar}>
         <img src={Birdie} className={styles.picture} alt="Profile" />
-        <p className={styles.name}>Hein Thant</p>
+        <div>
+          <p className={styles.info}>Report for</p>
+          <p className={styles.name}>Hein Thant</p>
+        </div>
       </div>
       <div className={styles.navBar}>
         <button
